@@ -3,39 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Betting App</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Betting App Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            padding: 20px;
+        }
+        .live-matches {
+            margin: 20px 0;
+        }
+        .match {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        @media (max-width: 600px) {
+            nav {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to Our Betting Platform</h1>
+        <h1>Welcome to the Betting App</h1>
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sports">Sports Betting</a></li>
-                <li><a href="#live-matches">Live Matches</a></li>
-                <li><a href="#odds">Odds Display</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
+            <a href="#home">Home</a>
+            <a href="#live-matches">Live Matches</a>
+            <a href="#markets">Markets</a>
+            <a href="#odds">Odds</a>
         </nav>
     </header>
-    <main>
-        <section id="sports">
-            <h2>Sports Betting Options</h2>
-            <p>Choose from a variety of sports to place your bets.
-            </p>
-        </section>
-        <section id="live-matches">
-            <h2>Live Matches</h2>
-            <p>Catch all the live action and place your bets in real-time.</p>
-        </section>
-        <section id="odds">
-            <h2>Odds Display</h2>
-            <p>Check the latest odds for your favorite sports events.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Online Betting App</p>
-    </footer>
+    <div class="container">
+        <h2>Live Matches</h2>
+        <div class="live-matches">
+            <div class="match">
+                <h3>Match 1: Team A vs Team B</h3>
+                <p>Odds: 1.5</p>
+            </div>
+            <div class="match">
+                <h3>Match 2: Team C vs Team D</h3>
+                <p>Odds: 2.2</p>
+            </div>
+            <!-- More matches can be listed here -->
+        </div>
+    </div>
 </body>
 </html>
